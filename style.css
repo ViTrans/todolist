@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006778;
+  font-family: "Poppins", sans-serif;
+}
+.wapper {
+  max-width: 400px;
+  margin-top: 120px;
+  background-color: #fff;
+  padding: 25px;
+  width: 100%;
+  border-radius: 5px;
+}
+.wapper .todolist {
+  width: 100%;
+}
+.wapper .heading {
+  text-align: center;
+}
+.wapper .input-field {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  margin: 20px 0;
+}
+.input-field input {
+  width: 90%;
+  height: 100%;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid #0093ab;
+  font-size: 17px;
+  padding: 10px;
+}
+.input-field button {
+  width: 40px;
+  height: 100%;
+  margin-left: 5px;
+  outline: none;
+  border: 1px solid #0093ab;
+  background-color: #0093ab;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.input-field button:hover {
+  transform: scale(1.1);
+}
+.wapper .todolist {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todolist li {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background-color: #ccc;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.todolist li span {
+  position: absolute;
+  right: -45px;
+  background-color: #00afc1;
+  color: white;
+  width: 40px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.todolist li:hover span {
+  right: 0;
+}
+.wapper .footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  outline: none;
+  border: 1px solid #0093ab;
+  background-color: #0093ab;
+  border-radius: 3px;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.footer button:hover {
+  transform: scale(1.1);
+}
